@@ -1,0 +1,95 @@
+/* Style général pour le body */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #f5f5f5, #dceefb);
+    margin: 0;
+    padding: 20px;
+    color: #e4caca;
+}
+
+/* Conteneurs principaux */
+.container, .achats {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background: rgb(60, 18, 173); /* Fond blanc pour contraster avec le fond général */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres */
+h1, h2 {
+    text-align: center;
+    color: #c3d2e7; /* Couleur bleue foncée */
+}
+
+/* Table des articles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #f9fafb; /* Légère teinte pour différencier la table */
+}
+
+table th {
+    background-color: #bfc8d4;
+    color: rgb(64, 50, 50);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Total affiché */
+.total {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    color: #dfbdbd;
+}
+
+/* Boutons et champs */
+button {
+    background-color: #2a4365; /* Couleur principale pour le bouton */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1d2e48; /* Plus foncé au survol */
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Responsive design pour petits écrans */
+@media (max-width: 768px) {
+    .container, .achats {
+        padding: 15px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
